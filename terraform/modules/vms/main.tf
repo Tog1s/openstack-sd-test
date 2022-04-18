@@ -1,8 +1,8 @@
 resource "openstack_compute_flavor_v2" "flavor_server" {
   name      = "server-${random_string.random_name_server.result}"
-  ram       = "1024"
-  vcpus     = "1"
-  disk      = "0"
+  ram       = var.vm_ram
+  vcpus     = var.vm_vcpus
+  disk      = var.vm_disk_index
   is_public = "false"
 }
 

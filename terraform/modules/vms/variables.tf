@@ -2,10 +2,22 @@ variable "vms_count" {
   default = 1
 }
 
-variable "disk_size" {}
-variable "volume_type" {}
+variable "vm_ram" {
+  default = "512"
+}
+
+variable "vm_vcpus" {
+  default = "1"
+}
+
+variable "vm_disk_index" {
+  default = 0
+}
+
 variable "az_zone" {}
-variable "network_id" {}
+variable "disk_size" {}
 variable "key_pair_id" {}
-variable "region" {}
+variable "network_id" {}
 variable "prefix_name" {}
+variable "region" {}
+variable "volume_type" {}
