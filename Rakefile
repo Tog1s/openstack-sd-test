@@ -1,7 +1,7 @@
 terraform_path = './terraform/workers'
 
 task test: ['test:terraform', 'test:ansible']
-task init: ['tf:apply', 'ansible:inventory', 'ansible:deploy']
+task deploy: ['tf:apply', 'ansible:inventory', 'ansible:deploy']
 
 desc 'Test infrastructure code'
 namespace :test do
