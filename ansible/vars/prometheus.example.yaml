@@ -1,0 +1,7 @@
+---
+openstack_password: ''
+openstack_username: ''
+openstack_domain_name: ''
+openstack_identity_endpoint: ''
+openstack_project_id: ''
+openstack_region: ''
